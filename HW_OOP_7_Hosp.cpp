@@ -143,5 +143,8 @@ int main() {
 
     CompareHospital(a, b);
 
+    cout << "Available beds in hospital a: " << a[0] << "\n";
+    cout << "Available beds in hospital b: " << b[0] << "\n";
+
     return 0;
 }
