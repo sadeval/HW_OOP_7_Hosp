@@ -66,10 +66,6 @@ public:
         return rating;
     }
 
-    int operator[](int index) const {
-        return availableBeds;
-    }
-
     bool operator<(const Hospital& other) const {
         return availableBeds < other.availableBeds;
     }
@@ -142,9 +138,6 @@ int main() {
     b.operator<<(cout);
 
     CompareHospital(a, b);
-
-    cout << "Available beds in hospital a: " << a[0] << "\n";
-    cout << "Available beds in hospital b: " << b[0] << "\n";
 
     return 0;
 }
